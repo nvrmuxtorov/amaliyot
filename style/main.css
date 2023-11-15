@@ -1,0 +1,745 @@
+@font-face {
+    font-family:Rotunda-medium ;
+    src: url(../fonts/Fontspring-DEMO-5a-rotunda-medium.otf);
+}
+@font-face {
+    font-family:Rotunda-regular ;
+    src: url(../fonts/Fontspring-DEMO-4a-rotunda-regular.otf);
+}
+@font-face {
+    font-family: light;
+    src: url(../fonts/Fontspring-DEMO-3a-rotunda-light.otf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+section{
+    display: flex;
+    justify-content: center; 
+}
+.allPadgeWidth{
+    width: 1440px;  
+    background: #FFF;
+}
+header{
+    display: flex;
+    justify-content: center;
+}
+header .allPadgeWidth{
+    display: flex;
+    padding: 20px 0 20px 54px ;
+    align-items: center;
+}
+header .allPadgeWidth strong{
+    color: #000;
+font-family: Rotunda-medium;
+font-size: 24px;
+font-weight: 600;
+margin-right:104px ;
+}
+header .allPadgeWidth .search_bar{
+    display: flex;
+    width: 471px;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+border: 1px solid var(--system-gray-05-light, #E5E5EA);
+background: #FFF;
+box-shadow: 0px 12px 24px 0px rgba(5, 16, 55, 0.04);
+}
+header .allPadgeWidth .search_bar i{
+    font-size: 25px;
+    color: #8E8E93;
+    margin-right: 12px;
+}
+header .allPadgeWidth .search_bar .search{
+    color: var(--system-gray-01-light, #8E8E93);
+font-family: Rotunda-medium;
+font-size: 16px;
+font-weight: 500;
+width: 387px;
+border: none;
+border: 1px;
+}
+header .allPadgeWidth .navbar ul{
+    display: flex;
+    margin-left: 121px;
+    gap: 32px;
+}
+header .allPadgeWidth .navbar ul li a{
+    color: #000;
+font-family: Rotunda-medium;
+font-size: 16px;
+font-weight: 500;
+}
+header .allPadgeWidth .navbar ul li a:hover{
+    color: var(--system-blue-light, #008FBCFF);
+    
+}
+header .allPadgeWidth .navbar ul li a:hover::after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #008FBCFF;
+    display: block;
+    margin-top: 3px;
+    transition: inherit 5s linear;
+}
+header .allPadgeWidth .icon{
+    width: 40px;
+height: 40px;
+flex-shrink: 0;
+fill: #FFF;
+border-radius: 50%;
+border: #E5E5EA 0.5px solid;
+margin-left: 42px;
+margin-right: 36px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+header .allPadgeWidth button{
+    display:flex;
+padding: 16px;
+align-items: center;
+border-radius: 33px;
+border: none;
+background: rgba(0, 122, 255, 0.12);
+}
+header .allPadgeWidth button:hover{
+    border: 0.5px solid rgba(0, 122, 255, 0.12);
+}
+header .allPadgeWidth button:active{
+    box-shadow: 2px 1px 2px 1px  rgba(19, 19, 19, 0.452)
+}
+/* header ended */
+/* main section started */
+.main .allPadgeWidth {
+    display: flex;
+    gap: 23px;
+    margin-top: 32px;
+    justify-content: center;
+}
+.main .allPadgeWidth .left-container{
+    width: 889px;
+height: 490px;
+flex-shrink: 0;
+border-radius: 12px 12px 0px 0px;
+background: url(../images/cool_image.png), lightgray 50% / cover no-repeat;
+}
+.main .allPadgeWidth .right-container{
+    width: 432px;
+    height: 490px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 18px 34px 0px rgba(5, 16, 55, 0.15);
+    padding: 48px 36px 36px 36px ;
+}
+.main .allPadgeWidth .right-container h3{
+    color: #000;
+    font-family: Rotunda-medium;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 36px; /* 128.571% */
+}
+.main .allPadgeWidth .right-container .profile{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 12px;
+}
+.main .allPadgeWidth .right-container .profile span{
+    color: #000;
+font-family: Rotunda;
+font-size: 16px;
+font-weight: 400;
+line-height: 16px; /* 100% */
+}
+.main .allPadgeWidth .right-container .nft_value{
+    display: flex;
+    gap: 24px;
+    margin-top: 46px;
+    align-items: center;
+}
+.main .allPadgeWidth .right-container .nft_value .price strong{
+    color: #000;
+font-family: Rotunda-regular;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px; /* 150% */
+}
+.main .allPadgeWidth .right-container .nft_value .price p{
+    color: #000;
+    font-family:Rotunda-medium ;
+font-size: 24px;
+font-weight: 500;
+line-height: 24px; /* 100% */
+margin-top: 12px;
+margin-bottom: 8px;
+}
+.main .allPadgeWidth .right-container .nft_value .price span{
+    color: var(--system-gray-01-light, #8E8E93);
+    font-family:Rotunda;
+font-size: 16px;
+font-weight: 500;
+line-height: 18px; /* 112.5% */
+}
+.main .allPadgeWidth .right-container .nft_value .price .container{
+   display: flex;
+   gap: 20px;
+}
+.main .allPadgeWidth .right-container .nft_value .line{
+    width: 1px;
+height: 81px;
+background: #C7C7CC;
+}
+.main .allPadgeWidth .end{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main .allPadgeWidth .right-container .end button{
+    display: flex;
+width: 360px;
+padding: 20px 10px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 45px;
+background: var(--system-blue-light, #007AFF);
+border:none;
+margin-top: 72px;
+margin-bottom: 20px;
+}
+.main .allPadgeWidth .right-container .end button:hover{
+    border:1px solid #00eeff;
+}
+.main .allPadgeWidth .right-container .end  button:active{
+    box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, 0.519);
+}
+.main .allPadgeWidth .right-container  .end button span{
+    color: #FFF;
+    font-family:Rotunda-medium ;
+font-size: 16px;
+font-weight: 600;
+}
+.main .allPadgeWidth .end a{
+    color: var(--system-blue-light, #007AFF);
+font-family: Rotunda-medium;
+font-size: 16px;
+font-weight: 500;
+
+}
+/* main section ended */
+/* live_auction section started */
+.live_auction .allPadgeWidth{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top:96px ;
+}
+.live_auction .allPadgeWidth .top{
+    display: flex;
+    justify-content: center;
+    gap: 977px;
+}
+.live_auction .allPadgeWidth .top strong{
+    font-family: Rotunda-medium;
+    color: #000;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 36px; /* 128.571% */
+    }
+    .live_auction .allPadgeWidth .top a{
+        color: var(--system-gray-01-light, #8E8E93);
+    font-family: Rotunda-regular;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
+    }
+.live_auction .allPadgeWidth .container{
+    display: flex;
+    gap: 32px;
+    margin-top: 36px;
+    justify-content: center;
+}
+.live_auction .allPadgeWidth .container .box{
+    width: 312px;
+height: 446px;
+}
+.live_auction .allPadgeWidth .container .box:hover{
+    box-shadow: 0px 18px 34px 0px rgba(5, 16, 55, 0.15);
+}
+.live_auction .allPadgeWidth .container .box .box_image{
+    width: 312px;
+height: 280px;
+border-radius: 16px 16px 0px 0px;
+background: url(../images/soft.png), lightgray 50% / cover no-repeat;
+}
+.live_auction .allPadgeWidth .container .box .black_square{
+    background: url(../images/black_square.png);
+    }
+.live_auction .allPadgeWidth .container .box .cloud{
+    background: url(../images/pink_cloud.png);
+    }
+    .live_auction .allPadgeWidth .container .box .ethereum{
+        background: url(../images/ethereum.png);
+        }
+.live_auction .allPadgeWidth .container .box .box_image .time{
+    display: inline-flex;
+    padding: 10px 12px;
+    align-items: center;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.60);
+    box-shadow: 0px 10px 30px 0px rgba(5, 16, 55, 0.15);
+    margin: 16px 0 0 191px;
+}
+.live_auction .allPadgeWidth .container .box .box_image .time span{
+    color: #2C2C2E;
+font-family: Rotunda-medium;
+font-size: 14px;
+font-weight: 500;
+}
+.live_auction .allPadgeWidth .container .box .box_info{
+    width: 312px;
+height: 166px;
+padding: 16px 0 0 20px ;
+border-radius: 0 0 16px  16px;
+border: 1.5px solid #E6E6E6;
+border-top: none;
+background: #FFF;
+}
+.live_auction .allPadgeWidth .container .box .box_info strong{
+    color: #000;
+font-family: Rotunda-medium;
+font-size: 20px;
+font-weight: 500;
+line-height: 28px; /* 140% */
+}
+.live_auction .allPadgeWidth .container .box .box_info .nft_info{
+    display: flex;
+    width: 272px;
+    align-items: flex-end;
+    margin-top: 48px;
+    gap: 42px;
+}
+.live_auction .allPadgeWidth .container .box .box_info .second{
+    margin-top: 20px;
+}
+.live_auction .allPadgeWidth .container .box .box_info .nft_info .nft_author{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.live_auction .allPadgeWidth .container .box .box_info .nft_info .nft_author span{
+    color: var(--system-gray-01-light, #8E8E93);
+font-family: Rotunda-regular;
+font-size: 16px;
+font-weight: 400;
+line-height: 16px; /* 100% */
+}
+.live_auction .allPadgeWidth .container .box .box_info .nft_info .nft_price p{
+    color: var(--system-gray-01-light, #8E8E93);
+    font-family: Rotunda-regular;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    margin-bottom: 6px;
+}
+.live_auction .allPadgeWidth .container .box .box_info .nft_info .nft_price span{
+    color: #000;
+font-family: Rotunda-medium;
+font-size: 20px;
+font-weight: 500;
+line-height: 24px; /* 120% */
+}
+/* live_auction section ended */
+  /* featured_nft section started  */
+  .featured_nft .allPadgeWidth{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top:90px ;
+    padding-left:48px ;
+}
+.featured_nft .allPadgeWidth .top{
+    display: flex;
+    justify-content: center;
+    gap: 1118px;
+    margin-bottom: 36px;
+
+}
+.featured_nft .allPadgeWidth .top strong{
+    font-family: Rotunda-medium;
+    color: #000;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 36px; /* 128.571% */
+    }
+    .featured_nft .allPadgeWidth .top a{
+        color: var(--system-gray-01-light, #8E8E93);
+    font-family: Rotunda-regular;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
+    }
+    .featured_nft .allPadgeWidth .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+    .featured_nft .allPadgeWidth .container .box{
+        width: 312px;
+    height: 446px;
+    }
+    .featured_nft .allPadgeWidth .container .box:hover{
+    box-shadow: 0px 18px 34px 0px rgba(5, 16, 55, 0.15);
+
+    }
+   .featured_nft.allPadgeWidth .container .box .box_image{
+        width: 312px;
+    height: 280px;}
+    .featured_nft .allPadgeWidth .container .box .box_info{
+        width: 312px;
+    height: 166px;
+    padding: 16px 0 0 20px ;
+    border-radius: 0 0 16px  16px;
+    border: 1.5px solid #E6E6E6;
+    border-top: none;
+    background: #FFF;
+    }
+    .featured_nft .allPadgeWidth .container .box .box_info strong{
+        color: #000;
+    font-family: Rotunda-medium;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px; /* 140% */
+    }
+    .featured_nft .allPadgeWidth .container .box .box_info .nft_info{
+        display: flex;
+        width: 272px;
+        align-items: flex-end;
+        margin-top: 48px;
+        gap: 42px;
+    }
+    .featured_nft .allPadgeWidth .container .box .box_info .nft_info .nft_author{
+        display: flex;
+        gap: 8px;
+        align-items: center;
+    }
+    .featured_nft .allPadgeWidth .container .box .box_info .nft_info .nft_author span{
+        color: var(--system-gray-01-light, #8E8E93);
+    font-family: Rotunda-regular;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px; /* 100% */
+    }
+    .featured_nft .allPadgeWidth .container .box .box_info .nft_info .nft_price p{
+        color: var(--system-gray-01-light, #8E8E93);
+        font-family: Rotunda-regular;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+        margin-bottom: 6px;
+    }
+    .featured_nft .allPadgeWidth .container .box .box_info .nft_info .nft_price span{
+        color: #000;
+    font-family: Rotunda-medium;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px; /* 120% */
+    }
+    .featured_nft .allPadgeWidth button{
+        border-radius: 48px;
+border: 1px solid var(--system-gray-02-light, #AEAEB2);
+display: flex;
+width: 208px;
+height: 56px;
+margin-left: 598px;
+justify-content: center;
+align-items: center;
+margin-top: 56px;
+    }
+    .featured_nft .allPadgeWidth button:hover{
+        background-color: #00eeff;;
+        border-color: #007AFF; 
+    }
+    .featured_nft .allPadgeWidth button:active{
+        box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, 0.405);
+    }
+    .featured_nft .allPadgeWidth button .btn_text{
+        color: #000;
+font-family: Rotunda-medium;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px; /* 150% */
+    }
+/*  featured_nft section ended */
+/*  top_creators section started  */
+.top_creators .allPadgeWidth{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top:90px ;
+    padding-left: 48px;
+}
+.top_creators .allPadgeWidth .top{
+    display: flex;
+    justify-content: center;
+    gap: 1103px;
+}
+.top_creators .allPadgeWidth .top strong{
+    font-family: Rotunda-medium;
+    color: #000;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 36px; /* 128.571% */
+    }
+    .top_creators .allPadgeWidth .top a{
+        color: var(--system-gray-01-light, #8E8E93);
+    font-family: Rotunda-regular;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
+    }
+    .top_creators .allPadgeWidth .container{
+        display: flex;
+        gap: 32px;
+        margin-top: 36px;
+        flex-wrap: wrap;
+    }
+    .top_creators .allPadgeWidth .container .box:hover{
+    box-shadow: 0px 18px 34px 0px rgba(5, 16, 55, 0.15);
+
+    }
+    .top_creators .allPadgeWidth .container .box .box_info{
+        width: 312px;
+    padding: 16px 20px 18px 16px  ;
+    border-radius: 0 0 16px  16px;
+    border: 1.5px solid #E6E6E6;
+    border-top: none;
+    background: #FFF;
+    display: flex;
+    gap: 16px;
+    }
+    .top_creators .allPadgeWidth .container .box .box_info .author_info strong {
+        color: #000;
+font-family: Rotunda-regular;
+font-size: 18px;
+font-weight: 400;
+line-height: 16px; /* 88.889% */
+    }
+    .top_creators .allPadgeWidth .container .box .box_info .author_info p{
+        color: var(--label-color-light-secondary, rgba(60, 60, 67, 0.60));
+font-family: Rotunda-regular;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px; /* 150% */
+margin-top: 16px;
+margin-bottom: 72px;
+    }
+    .top_creators .allPadgeWidth .container .box .box_info .author_info .followers{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .top_creators .allPadgeWidth .container .box .box_info .author_info .followers .follow{
+        color: #000;
+font-family: Rotunda-regular;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px; /* 150% */
+    }
+    .top_creators .allPadgeWidth .container .box .box_info .author_info .followers button{
+        display: flex;
+width: 83px;
+height: 36px;
+justify-content: center;
+align-items: center;
+border-radius: 38px;
+background: var(--system-blue-light, #007AFF);
+border: none;
+    }
+    .top_creators .allPadgeWidth .container .box .box_info .author_info .followers button:hover{
+        border: #008FBCFF;
+    }
+    .top_creators .allPadgeWidth .container .box .box_info .author_info .followers button:active{
+        box-shadow: 1px 2px 1px 2px rgba(0, 0, 0, 0.533);
+    }
+    .top_creators .allPadgeWidth .container .box .box_info .author_info .followers button span{
+        color: #FFF;
+font-family: light;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px; /* 150% */
+    }
+    .top_creators .allPadgeWidth .btn{
+        display:flex;
+justify-content: center;
+width: 257px;
+height: 58px;
+align-items: center;
+border-radius: 48px;
+border: 1px solid var(--system-gray-02-light, #AEAEB2);
+margin-left: 543px;
+margin-top: 56px;
+margin-bottom: 90px;
+    }
+    .top_creators .allPadgeWidth .btn:hover{
+        background-color: #007AFF;
+        border-color: #00eeff;
+    }
+    .top_creators .allPadgeWidth .btn:active{
+        box-shadow: 2px 1px 2px 1px;
+    }
+    .top_creators .allPadgeWidth .btn .btn_text {
+        color: #000;
+        font-family: Rotunda-medium;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px; /* 150% */
+    }
+/*  top_creators section ended  */
+/* footer section started */
+footer{
+    display: flex;
+    justify-content: center;
+}
+footer .allPadgeWidth{
+    width: 1440px;
+height: 400px;
+background: #000;
+padding-top :40px ;
+padding-left: 48px;
+}
+footer .allPadgeWidth .more {
+    display: flex;
+}
+footer .allPadgeWidth .more strong{
+    color: #FFF;
+    font-family: Rotunda-medium;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px; /* 120% */
+}
+footer .allPadgeWidth .more .subscribe {
+    margin-right: 146px;
+}
+footer .allPadgeWidth .more .subscribe .email{
+    display: flex;
+width: 427px;
+height: 56px;
+justify-content: centers;
+align-items: center;
+gap: 10px;
+border-radius: 72px;
+background: var(--system-background-dark-base-tertiary, #2C2C2E);
+margin-top: 24px;
+}
+footer .allPadgeWidth .more .email .email_bar{
+    width: 295px;
+    background: var(--system-background-dark-base-tertiary, #2C2C2E);
+    border: none;
+    color: var(--label-color-dark-secondary, rgba(235, 235, 245, 0.60));
+font-family: Rotunda-medium;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px; /* 150% */
+margin-left: 24px;
+}
+footer .allPadgeWidth .more .email button{
+    display: flex;
+height: 56px;
+padding: 10px 10px 10px 12px;
+align-items: center;
+border-radius: 72px;
+background: var(--system-blue-dark, #0A84FF);
+border: none;
+}
+footer .allPadgeWidth .more .email button:active{
+    box-shadow: 2px 1px 2px 1px rgb(255, 255, 255, 0.366);
+}
+footer .allPadgeWidth .more .email button span{
+    color: #FFF;
+font-family: light;
+font-size: 16px;
+font-weight: 500;
+}
+footer .allPadgeWidth .more .rolling{
+margin-right:175px ;
+}
+footer .allPadgeWidth .more ul .firs_child{
+    margin-top: 28px;
+}
+footer .allPadgeWidth .more ul li{
+    margin-bottom:16px ;
+}
+footer .allPadgeWidth .more ul li a{
+    color: var(--label-color-dark-secondary, rgba(235, 235, 245, 0.60));
+font-family: light;
+font-size: 20px;
+font-weight: 400;
+line-height: 24px; /* 120% */
+}
+footer .allPadgeWidth .more ul li a:hover{
+    color: #FFF;
+}
+footer .allPadgeWidth .line{
+    width: 1344px;
+height: 1px;
+background: rgba(84, 84, 88, 0.65);
+margin-top: 72px;
+margin-bottom: 34px;
+}
+footer .allPadgeWidth .final{
+    display: flex;
+    justify-content: space-between;
+}
+footer .allPadgeWidth .final .term ul{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+footer .allPadgeWidth .final .term ul strong{
+    color: #FFF;
+font-family: Rotunda-medium;
+font-size: 24px;
+font-weight: 600;
+margin-right: 40px;
+}
+footer .allPadgeWidth .final .term ul a{
+    color: var(--label-color-dark-secondary, rgba(235, 235, 245, 0.60));
+font-family: light;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px; /* 150% */
+}
+
+footer .allPadgeWidth .final .term ul a:hover{
+    color: #FFF;
+}
+footer .allPadgeWidth .final .social_media{
+    display: flex;
+    gap: 24px;
+    margin-right:48px ;
+}
+footer .allPadgeWidth .final .social_media i{
+    color: #EBEBF599;
+    font-size: 25px;
+}
+footer .allPadgeWidth .final .social_media i:hover{
+    color: #FFF;
+}
+/* footer section ended */
+
+
