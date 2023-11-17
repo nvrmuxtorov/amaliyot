@@ -32,11 +32,13 @@ section{
 header{
     display: flex;
     justify-content: center;
+
 }
 header .allPadgeWidth{
     display: flex;
     padding: 20px 0 20px 54px ;
     align-items: center;
+    position: fixed;
 }
 header .allPadgeWidth strong{
     color: #000;
@@ -84,14 +86,18 @@ header .allPadgeWidth .navbar ul li a:hover{
     color: var(--system-blue-light, #008FBCFF);
     
 }
-header .allPadgeWidth .navbar ul li a:hover::after{
+header .allPadgeWidth .navbar ul li a::after{
     content: "";
-    width: 100%;
-    height: 1px;
+    width: 0;
+    height: 2px;
     background-color: #008FBCFF;
     display: block;
-    margin-top: 3px;
-    transition: inherit 5s linear;
+    margin-top: 1px;
+
+}
+header .allPadgeWidth .navbar ul li a:hover:after{
+width: 100%;
+transition: all .4s linear;
 }
 header .allPadgeWidth .icon{
     width: 40px;
@@ -106,12 +112,19 @@ display: flex;
 align-items: center;
 justify-content: center;
 }
+header .allPadgeWidth .icon:hover{
+    background-color: #000;
+}
+header .allPadgeWidth .icon:hover i{
+    color: #007AFF;
+}
 header .allPadgeWidth button{
     display:flex;
 padding: 16px;
 align-items: center;
 border-radius: 33px;
 border: none;
+cursor: pointer;
 background: rgba(0, 122, 255, 0.12);
 }
 header .allPadgeWidth button:hover{
@@ -125,8 +138,9 @@ header .allPadgeWidth button:active{
 .main .allPadgeWidth {
     display: flex;
     gap: 23px;
-    margin-top: 32px;
+    margin-top: 125px;
     justify-content: center;
+
 }
 .main .allPadgeWidth .left-container{
     width: 889px;
@@ -219,9 +233,14 @@ background: var(--system-blue-light, #007AFF);
 border:none;
 margin-top: 72px;
 margin-bottom: 20px;
+cursor: pointer;
 }
+
 .main .allPadgeWidth .right-container .end button:hover{
-    border:1px solid #00eeff;
+  background-color: #0d00ff; 
+}
+.main .allPadgeWidth .right-container .end button:hover span{
+    color: #000;
 }
 .main .allPadgeWidth .right-container .end  button:active{
     box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, 0.519);
@@ -275,10 +294,12 @@ font-weight: 500;
 .live_auction .allPadgeWidth .container .box{
     width: 312px;
 height: 446px;
+cursor: pointer;
 }
 .live_auction .allPadgeWidth .container .box:hover{
     box-shadow: 0px 18px  34px 0 rgba(5, 16, 55, 0.15);
     border-radius: 0 0 16px  16px;
+    transition: all .2s linear;
 }
 .live_auction .allPadgeWidth .container .box .box_image{
     width: 312px;
@@ -401,6 +422,8 @@ line-height: 24px; /* 120% */
     .featured_nft .allPadgeWidth .container .box{
         width: 312px;
     height: 446px;
+    transition: all .2s linear;
+    cursor: pointer;
     }
     .featured_nft .allPadgeWidth .container .box:hover{
     box-shadow: 0px 18px 34px 0px rgba(5, 16, 55, 0.15);
@@ -469,10 +492,14 @@ margin-left: 598px;
 justify-content: center;
 align-items: center;
 margin-top: 56px;
+cursor: pointer;
     }
     .featured_nft .allPadgeWidth button:hover{
-        background-color: #00eeff;;
+        background-color: #007AFF;
         border-color: #007AFF; 
+    }
+    .featured_nft .allPadgeWidth button:hover span{
+        color: #FFF;
     }
     .featured_nft .allPadgeWidth button:active{
         box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, 0.405);
@@ -521,6 +548,8 @@ line-height: 24px; /* 150% */
     .top_creators .allPadgeWidth .container .box:hover{
     box-shadow: 0px 18px 34px 0px rgba(5, 16, 55, 0.15);
     border-radius: 0 0 16px  16px;
+    transition: all .2s linear;
+    cursor: pointer;
     }
     .top_creators .allPadgeWidth .container .box .box_info{
         width: 312px;
@@ -569,6 +598,10 @@ align-items: center;
 border-radius: 38px;
 background: var(--system-blue-light, #007AFF);
 border: none;
+cursor: pointer;
+    }
+    .top_creators .allPadgeWidth .container .box .box_info .author_info .followers button:hover span{
+color: black;
     }
     .top_creators .allPadgeWidth .container .box .box_info .author_info .followers button:hover{
         border: #008FBCFF;
@@ -594,10 +627,14 @@ border: 1px solid var(--system-gray-02-light, #AEAEB2);
 margin-left: 543px;
 margin-top: 56px;
 margin-bottom: 90px;
+cursor: pointer;
     }
     .top_creators .allPadgeWidth .btn:hover{
         background-color: #007AFF;
         border-color: #00eeff;
+    }
+    .top_creators .allPadgeWidth .btn:hover span{
+        color: #FFF;
     }
     .top_creators .allPadgeWidth .btn:active{
         box-shadow: 2px 1px 2px 1px;
